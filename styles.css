@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #333;
+    background: #f5f5f5;
+    padding: 10px;
+}
+
+.container {
+    max-width: 980px;
+    margin: 100px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 10px;
+}
+
+.item{
+    background-color: rgb(79, 79, 211);
+    color: #fff;
+    padding: 20px;
+    border: skyblue 1px solid;
+}
+
+.item:nth-of-type(1) {
+    background: black;
+}
+
+@media (max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
